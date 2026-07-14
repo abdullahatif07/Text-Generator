@@ -28,14 +28,14 @@ h1{
 }
 
 #first{
-    height: 200px;
-    width: 400px;
+    height: 100px;
+    width: 300px;
     background-color: #785252;
 }
 
 #input-text{
-    height: 200px;
-    width: 400px;
+    height: 100px;
+    width: 300px;
     background-color: #785252;
     border-radius: 10px;
     /* margin-top: 20px; */
@@ -50,18 +50,56 @@ button{
 #second{
     margin-top: 20px;
     color: #fff;
-    height: 50px;
-    width: 400px;
+    height: 40px;
+    width: 300px;
     font-size: 30px;
 }
 
 #times{
-    height: 50px;
-    width: 400px;
+    height: 40px;
+    width: 300px;
+    background-color: rgb(50, 87, 84);
+}
+
+.submit{
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: yellow;
+    margin-left: 570px;
+    margin-top: 20px;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.submit:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 #third{
     height: 200px;
     width: 400px;
-    margin-top: 20px;
+    margin-top: 40px;
+    display: flex;
+    /* justify-content: flex-end; */
+}
+
+#copy-button{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(56, 202, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: fixed;
+}
+
+#copy-button:hover{
+    cursor: pointer;
 }
