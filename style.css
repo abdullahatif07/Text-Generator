@@ -21,18 +21,21 @@ h1{
 /* Main section starts from */
 
 /* Upper box*/
-
 .upper-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Inner boxs */
 .box{
     height: 200px;
-    width: 400px;
+    width: 100%;
     background-color:#1E293B;
     border-radius: 10px;
 }
@@ -47,7 +50,7 @@ h1{
 
 #input-text{
     height: 100px;
-    width: 400px;
+    width: 100%;
     color: #F8FAFC;
     caret-color: #7DD3FC;
     background-color: #1E293B;
@@ -83,7 +86,6 @@ textarea::-webkit-scrollbar-track {
 #second{
     margin-top: 40px;
     height: 50px;
-    width: 400px;
     font-size: 30px;
     border-radius: 10px;
     background-color: #334155;
@@ -91,7 +93,7 @@ textarea::-webkit-scrollbar-track {
 
 #times{
     height: 50px;
-    width: 400px;
+    width: 100%;
     color: #F8FAFC;
     caret-color: #7DD3FC;
     background-color: #334155;
@@ -119,13 +121,13 @@ input[type="number"]::-webkit-outer-spin-button {
 /* Third box / Output box */
 #third{
     height: 200px;
-    width: 400px;
     margin-top: 40px;
     overflow-y: auto;
     overflow-x: hidden;
     position: relative;
     background-color: #475569;
 }
+
 
 #third p{
     font-size: 16px;
@@ -191,23 +193,40 @@ input[type="number"]::-webkit-outer-spin-button {
 #toast.show{
     opacity: 1;
 }
+
+/* Tablets & large phones */
 @media (max-width: 600px) {
-    h1 {
+
+    h1{
         font-size: 2rem;
     }
 
-    .upper-box {
+    .upper-box{
         padding: 0 15px;
     }
+}
 
-    .box,
-    #input-text,
-    #times {
-        width: 100%;
-        max-width: 400px;
+/* Small phones */
+@media (max-width: 430px){
+
+    h1{
+        font-size: 1.7rem;
     }
 
-    #third {
-        height: 180px;
+    #second,
+    #third{
+        margin-top: 20px;
+    }
+
+    #copy-button{
+        width: 35px;
+        height: 35px;
+        top: 8px;
+        right: 8px;
+    }
+
+    #input-text,
+    #times{
+        font-size: 14px;
     }
 }
