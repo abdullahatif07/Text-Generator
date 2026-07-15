@@ -3,31 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website Title name -->
     <title>Multiple Text Generator</title>
+    <!-- Links to css file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Top heading -->
     <h1>Magic Text Generator</h1>
-
-    <!-- <p>Paste your text in this first box</p> -->
     
+    <!-- Top box/div -->
     <div class="upper-box">
-
+        <!-- first div/box (input box)-->
         <div class="box" id="first">
-            <input type="text" id="input-text">
+            <!-- for input text -->
+            <textarea id="input-text" placeholder="Enter your text here" required autofocus></textarea>
         </div>
 
+        <!-- Second div/box (number of times box) -->
         <div class="box" id="second">
-            <input type="number" id="times">
+            <!-- for input number of times text -->
+            <input type="number" id="times" placeholder="Enter the number of times" min="1" max="100" required>
         </div>
 
-        <div class="submit" id="submit-button">submit</div>
-
-        <!-- <div id="copy-button">copy</div> -->
+        <!-- Third div/box (Output-text box) -->
         <div class="box" id="third">
+            <!-- Copy button -->
+            <div id="copy-button">copy</div>
+            <!-- Displaying output text -->
+            <p id="output-text"></p>
         </div>
 
     </div>
+
+    <!-- Displaying text copied message -->
+    <div id="toast">Copied</div>
+
+    <!-- Link to js file -->
     <script src="script.js"></script>
 </body>
 </html>
