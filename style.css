@@ -191,25 +191,23 @@ input[type="number"]::-webkit-outer-spin-button {
 #toast.show{
     opacity: 1;
 }
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
 
-
-/* Adding responsiveness */
-
-@media (max-width: 600px){
-    h1{
-        font-size: 32px;
+    .upper-box {
+        padding: 0 15px;
     }
 
     .box,
     #input-text,
-    #times,
-    #second,
-    #third{
-        width: 90%;
-        max-width: 100%;
+    #times {
+        width: 100%;
+        max-width: 400px;
     }
 
-    #third{
+    #third {
         height: 180px;
     }
 }
